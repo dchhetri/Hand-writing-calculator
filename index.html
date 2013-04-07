@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+	<title> Handwriting detection </title>
+	
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v4.4.0.js"></script>
+	<script src="http://underscorejs.org/underscore.js"></script>
+
+	<script type="text/javascript" src="./src/environment.js"></script>
+	<script type="text/javascript" src="./src/down-sampler.js"></script>
+	<script type="text/javascript" src="./src/pencil.js"></script>
+	<script type="text/javascript" src="./src/trainer.js"></script>
+	<script type="text/javascript" src="./src/app.js"></script>
+</head>
+
+<html>
+	<body>
+		<div style="color:gray">Note: Only recognizes one character at a time right now</div>
+		<div>Best Match: <span id='result'></span></div>
+		<div id="drawing-container"></div>
+	</body>
+
+
+	<script>
+		$(document).ready(function(){
+			window.app = new App();
+			app.render();
+		})
+	</script>
+</html>

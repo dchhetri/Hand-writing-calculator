@@ -1,0 +1,1 @@
+What up what up!! This is a starting point in making an application that lets user write equation on canvas and have it solved
